@@ -13,3 +13,8 @@ A location intelligence platform to provide insights of  user's behaviour data t
 
 Supported tools to injest customer's data: 
   - S3
+  - More to come
+
+Processing:
+  - Presto for real time ad-hock SQL analytics
+  - And Spark for ETL, ML model traning and aggregation
