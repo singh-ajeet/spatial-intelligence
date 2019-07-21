@@ -27,3 +27,6 @@ NoSQL database connectors:
 RDBMS database connectors: 
   - MySQL
   - PostgreSQL
+  
+Monitoring:
+  - Prometheus
