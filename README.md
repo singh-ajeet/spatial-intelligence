@@ -1,4 +1,4 @@
-# Spatial Intelligence
+# Spatial Intelligence (Latitude, Longitude and Time) - a scalable platform for time series & spatial data
 
 A location intelligence platform to provide insights of  user's behaviour data that helps customers in taking decisions for ad campains and future expensions. We provides - "location", "demography" and "interest" about a POI and a customer after adding "behavior" to it can engage and analyze its user's interests.
 
