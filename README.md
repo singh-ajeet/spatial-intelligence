@@ -31,6 +31,7 @@ RDBMS database connectors:
   - PostgreSQL
 
 Deployment environment:
+  - Amazon Web Services
   - Docker
   - Kubernetes
   
