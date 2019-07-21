@@ -9,14 +9,16 @@ A location intelligence platform to provide insights of  user's behaviour data t
  - User can create his own custom pipelines along with our datasets and customer's datasets
  - Data injestion across different formats - a plain text, parquet, ORC etc.
  - Schema evolution support - robust support for data schemas that change over time
-
+ - Multi-tenant 
+ - Resilient
+ - Easy debugging and monitoring
 
 Supported tools to injest customer's data: 
   - S3
   - More to come
 
 Processing:
-  - Presto for real time ad-hock SQL analytics
+  - Presto for real time (in seconds) ad-hock SQL analytics
   - And Spark for ETL, ML model traning and aggregation
   
 NoSQL database connectors:
@@ -27,6 +29,10 @@ NoSQL database connectors:
 RDBMS database connectors: 
   - MySQL
   - PostgreSQL
+
+Deployment environment:
+  - Docker
+  - Kubernetes
   
 Monitoring:
   - Prometheus
