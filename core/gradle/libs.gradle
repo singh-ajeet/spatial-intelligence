@@ -1,0 +1,19 @@
+def hadoop_version = "2.6.0"
+def spark_version = "2.4.3"
+def scala_version = "2.12.8"
+
+def jts_version = "1.16.1"
+
+project.ext.libs = [
+		hadoop:	["org.apache.hadoop:hadoop-common:${hadoop_version}",
+				 "org.apache.hadoop:hadoop-mapreduce-client-core:${hadoop_version}",
+				 "org.apache.hadoop:hadoop-hdfs:${hadoop_version}",
+				 "org.apache.hadoop:hadoop-mapreduce-client-common:${hadoop_version}"],
+
+		spark_core :  dependencies.create("org.apache.spark:spark-core_2.12:$spark_version"),
+		spark_sql  : dependencies.create("org.apache.spark:spark-sql_2.10:$spark_version"),
+		
+		scala_lib  : dependencies.create("org.scala-lang:scala-library:$scala_version"),
+		
+		jts  : dependencies.create("org.locationtech.jts:jts-core:$jts_version")
+]

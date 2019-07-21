@@ -1,0 +1,6 @@
+rootProject.name = 'spatial-intelligence-core'
+
+include ":kafka"
+include ":spark"
+include ":cassandra"
+include ":connectors"
