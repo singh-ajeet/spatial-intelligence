@@ -18,3 +18,12 @@ Supported tools to injest customer's data:
 Processing:
   - Presto for real time ad-hock SQL analytics
   - And Spark for ETL, ML model traning and aggregation
+  
+NoSQL database connectors:
+  - Cassandra
+  - MongoDB
+  - Kafka
+ 
+RDBMS database connectors: 
+  - MySQL
+  - PostgreSQL
