@@ -5,6 +5,9 @@ def scala_version = "2.12.8"
 def jts_version = "1.16.1"
 def cassandra_java_connecor_version = "4.1.0"
 
+def mockito_version = "1.10.19"
+def powermock_version = "1.6.4"
+
 project.ext.libs = [
 		hadoop:	["org.apache.hadoop:hadoop-common:${hadoop_version}",
 				 "org.apache.hadoop:hadoop-mapreduce-client-core:${hadoop_version}",
@@ -18,5 +21,14 @@ project.ext.libs = [
 
 		jts  : dependencies.create("org.locationtech.jts:jts-core:$jts_version"),
 
-		cassandra_java_connecor  : dependencies.create("com.datastax.oss:java-driver-core:$cassandra_java_connecor_version")
+		cassandra_java_connecor  : dependencies.create("com.datastax.oss:java-driver-core:$cassandra_java_connecor_version"),
+		
+		mockito  : [
+				"org.mockito:mockito-core:$mockito_version",
+				dependencies.create("org.powermock:powermock-api-mockito:$powermock_version") {
+					exclude group: "org.mockito"
+				},
+				"org.powermock:powermock-module-junit4:$powermock_version",
+				"org.powermock:powermock-core:$powermock_version"
+		]
 ]
