@@ -3,6 +3,7 @@ def spark_version = "2.4.3"
 def scala_version = "2.12.8"
 
 def jts_version = "1.16.1"
+def cassandra_java_connecor_version = "4.1.0"
 
 project.ext.libs = [
 		hadoop:	["org.apache.hadoop:hadoop-common:${hadoop_version}",
@@ -14,6 +15,8 @@ project.ext.libs = [
 		spark_sql  : dependencies.create("org.apache.spark:spark-sql_2.10:$spark_version"),
 		
 		scala_lib  : dependencies.create("org.scala-lang:scala-library:$scala_version"),
-		
-		jts  : dependencies.create("org.locationtech.jts:jts-core:$jts_version")
+
+		jts  : dependencies.create("org.locationtech.jts:jts-core:$jts_version"),
+
+		cassandra_java_connecor  : dependencies.create("com.datastax.oss:java-driver-core:$cassandra_java_connecor_version")
 ]
